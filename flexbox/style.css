@@ -1,0 +1,35 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.flex-container > div {
+    padding : 20px;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: white;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: cyan;
+    }
+    100% {
+        background-color: red;
+    }
+}

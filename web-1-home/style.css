@@ -1,6 +1,7 @@
-
+body {
+    background-image: url('assets/christmas\ forest.jpg');
+    background-size: cover;
+}
 div {
-    font-size: larger;
-    text-align: center;
     
 }
