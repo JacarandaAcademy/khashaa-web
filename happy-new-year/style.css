@@ -21,14 +21,14 @@ body {
     inherits: false;
 }
 
-.test>span{
+.num1{
     font-family: 'Montserrat', sans-serif;
     font-size: 175px;
     font-weight: 700;
     color:  gold;
-    position: relative;
+    position: absolute;
+    margin-left: 38%;
     align-items: center;
-    justify-content: 38%;
 }
 
 span {

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First JS code</title>
+    </head>
+    <body>
+        <div id="code" style="background-color: gold;">
+            <label for="name1">First Name:</label>
+            <input type="text" id="name1" />
+            <label for="name2">Last Name:</label>
+            <input type="text" id="name2" />
+            <button type="button" onclick="printname()">Submit</button>
+        </div>
+        <div>
+            <input id="a" type="text"/>
+            <input id="b" type="text"/>
+            <button onclick="addnum()">+ =</button>
+            <button onclick="minnum()">- =</button>
+            <button onclick="mulnum()">* =</button>
+            <button onclick="divnum()">/ =</button>
+            <input id="s" type="text" />
+        </div>
+        <script>
+            function printname(){
+                let name1 = document.getElementById("name1").value;
+                let name2 = document.getElementById("name2").value;
+                let name3 = name1+ " " + name2
+                alert("Hello: "+name3);
+            }
+            function addnum(){
+                const a = document.getElementById("a").value;
+                const b = document.getElementById("b").value;
+                const s =parseInt(a) + parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function minnum(){
+                const a = document.getElementById("a").value;
+                const b = document.getElementById("b").value;
+                const s =parseInt(a) - parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function mulnum(){
+                const a = document.getElementById("a").value;
+                const b = document.getElementById("b").value;
+                const s =parseInt(a) * parseInt(b);
+                document.getElementById("s").value = s;
+            }
+            function divnum(){
+                const a = document.getElementById("a").value;
+                const b = document.getElementById("b").value;
+                const s =parseInt(a) / parseInt(b);
+                document.getElementById("s").value = s;
+            }
+        </script>
+    </body>
+</html>
