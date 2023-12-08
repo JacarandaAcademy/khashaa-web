@@ -2,38 +2,37 @@
 <html>
     <head>
         <title>Calculator</title>
-        <link rel="stylesheet" herf="style.css" >
     </head>
-    <body>
-        <table>
-            <tr>
-                <td colspan="4"><input id="num" ></td>
-            </tr>
-            <tr>
-                <td><button onclick="pressNumber(7)">7</button></td>
-                <td><button onclick="pressNumber(8)">8</button></td>
-                <td><button onclick="pressNumber(9)">9</button></td>
-                <td><button>*</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="pressNumber(4)">4</button></td>
-                <td><button onclick="pressNumber(5)">5</button></td>
-                <td><button onclick="pressNumber(6)">6</button></td>
-                <td><button>-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="pressNumber(1)">1</button></td>
-                <td><button onclick="pressNumber(2)">2</button></td>
-                <td><button onclick="pressNumber(3)">3</button></td>
-                <td><button onclick="pressOper('+')">+</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="pressNumber('.')">.</button></td>
-                <td><button onclick="pressNumber(0)">0</button></td>
-                <td><button>/</button></td>
-                <td><button onclick="pressOper('=')">=</button></td>
-            </tr>
-        </table>
+    <body style="background-color: whitesmoke;">
+        <div style="display: flex; align-items: center;justify-content: center;position: relative;margin-top: 20%;">
+            <div style="display: inline-block;">
+                <input id="num">
+            </div>
+            <div style="display: inline-block;">
+                <div><button onclick="pressNumber(7)" class="button">7</button></div>
+                <div><button onclick="pressNumber(8)" class="button">8</button></div>
+                <div><button onclick="pressNumber(9)" class="button">9</button></div>
+                <div><button onclick="pressOper('*')" class="button">*</button></div>
+            </div>
+            <div style="display: inline-block;">
+                <div><button onclick="pressNumber(4)" class="button">4</button></div>
+                <div><button onclick="pressNumber(5)" class="button">5</button></div>
+                <div><button onclick="pressNumber(6)" class="button">6</button></div>
+                <div><button onclick="pressOper('-')" class="button">-</button></div>
+            </div>
+            <div style="display: inline-block;">
+                <div><button onclick="pressNumber(1)" class="button">1</button></div>
+                <div><button onclick="pressNumber(2)" class="button">2</button></div>
+                <div><button onclick="pressNumber(3)" class="button">3</button></div>
+                <div><button onclick="pressOper('+')" class="button">+</button></div>
+            </div>
+            <div style="display: inline-block;flex-direction: row;">
+                <div><button onclick="pressNumber('.')" class="button">.</button></div>
+                <div><button onclick="pressNumber(0)" class="button">0</button></div>
+                <div><button onclick="pressOper('/')" class="button">/</button></div>
+                <div><button onclick="pressOper('=')" class="button">=</button></div>
+            </div>
+        </div>
         <script>
             var ope;
             var mem;
@@ -44,6 +43,24 @@
                         case '+' : 
                             const sum = parseFloat(mem)+ parseFloat(lastValue);
                             document.getElementById("num").value = sum;
+                            mem = undefined;
+                            ope = undefined;
+                            return;
+                        case '*' : 
+                            const mul = parseFloat(mem)* parseFloat(lastValue);
+                            document.getElementById("num").value = mul;
+                            mem = undefined;
+                            ope = undefined;
+                            return;
+                        case '-' : 
+                            const min = parseFloat(mem)- parseFloat(lastValue);
+                            document.getElementById("num").value = min;
+                            mem = undefined;
+                            ope = undefined;
+                            return;
+                        case '/' : 
+                            const div = parseFloat(mem)/ parseFloat(lastValue);
+                            document.getElementById("num").value = div;
                             mem = undefined;
                             ope = undefined;
                             return;
