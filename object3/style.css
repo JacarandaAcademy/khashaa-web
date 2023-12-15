@@ -1,0 +1,57 @@
+.stickman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#body {
+    display: flex;
+}
+
+#torso {
+    width: 30px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.arm {
+    width: 20px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+#leftArm {
+    transform: rotate(45deg);
+}
+
+#rightArm {
+    transform: rotate(-45deg);
+}
+
+#legs {
+    display: flex;
+}
+
+.leg {
+    width: 20px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+#leftLeg {
+    transform: rotate(45deg);
+}
+
+#rightLeg {
+    transform: rotate(-45deg);
+}
+
+button {
+    margin-bottom: 10px;
+}
