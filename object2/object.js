@@ -64,29 +64,3 @@ function onChangeColor() {
     const inputColor = document.getElementById("ColorInput").value;
     person.changeColor(inputColor);   
 }
-
-// It's just kind of fun to write here sometimes y'know.
-// I just feel like sometimes I don't have anyone to talk about my problems.
-// And because of that I feel horrible.
-// But like what am I supposed to do right.
-// Started to not care about what others felt.
-// But that just made me feel emotionless sometimes.
-// Sometimes I just want a break from life.
-// I hate how love works in mysterious ways.
-// Your crush can fall in love with just about anyone.
-// And you just have to sit there and listen to them talk about there own crush and how amazing they are and that "crushes" you from the inside hehe.See what I did there.
-// But honestly if there crush makes them happy then I'm fine with it.
-// But like why do you have to be so cute girl XD.
-// I mean if you really love someone you would want them to be happy right.
-// Anyways sometimes I just feel like I'm not good enough sometimes.
-// Like I'm unlovable by anyone.
-// Well It's all just life in the end.
-// These things happen.
-// You feel sad in one moment then you feel happy the next.
-// You'll feel love and heartbreak but you get over it eventually.
-// Not that I've ever broken up or felt heartbreak before lol.
-// I just want someone that can support me.
-// That can tell me that "Everythings going to be alright".
-// That can help me go through this thing called life together.
-// Ofcourse I'm gonna support them too.
-// Hehe. It's kind of funny to think about how desperate we humans can be for love.
